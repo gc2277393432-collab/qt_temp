@@ -1,7 +1,9 @@
+#include <QCoreApplication>
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QObject>
+#include <QStringLiteral>
 
 int main(int argc, char *argv[])
 {
@@ -9,8 +11,7 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
 
-
-    const QUrl url("qrc:/untitled1/main.qml");
+    const QUrl url(QStringLiteral("qrc:/qt/qml/untitled1/Main.qml"));
 
     QObject::connect(
         &engine,
